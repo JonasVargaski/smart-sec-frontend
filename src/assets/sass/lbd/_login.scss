@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.j-bg-degrade {
+  background-image: linear-gradient(0deg, rgba(41, 51, 56, 1) 0%, rgba(188, 186, 204, 0.2665441176470589) 100%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .j-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .j-container-form {
+    display: flex;
+    flex-direction: row;
+    width: 860px;
+    height: 608px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 5px 16px rgba(0, 15, 0, 9);
+    background: #fefefe;
+    position: relative;
+
+    .painel-logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+
+    .painel-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    .img-logo {
+      max-width: 70%;
+    }
+    .form-header {
+      width: 100%;
+      font-size: 23px;
+      font-weight: bold;
+      margin-top: 26px;
+      .form-title {
+        text-align: center;
+        font-size: 25px;
+        p {
+          text-align: center;
+          margin-left: -28px;
+          margin-top: -5px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    form {
+      width: 100%;
+      .j-botao-cad {
+        text-decoration: none;
+        cursor: default;
+        font-size: 16px;
+        color: #1cbcf7;
+        cursor: pointer;
+        margin-left: -215px;
+        &:hover {
+          font-size: 18px;
+        }
+      }
+
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        width: 100%;
+        input {
+          border: none;
+          color: #666666;
+          width: 80%;
+          height: 50px;
+          background: #e6e6e6;
+          border-radius: 25px;
+          padding: 0 15px 0 15px;
+          text-align: left;
+
+          outline: none;
+          &:focus {
+            -webkit-box-shadow: 3px 6px 35px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 3px 6px 35px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 6px 35px -5px rgba(0, 0, 0, 0.75);
+            transition: 0.3s;
+          }
+          &:hover {
+            -webkit-box-shadow: 3px 6px 35px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 3px 6px 35px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 6px 35px -5px rgba(0, 0, 0, 0.75);
+            transition: 0.3s;
+          }
+        }
+        button {
+          color: #fff;
+          font-weight: bold;
+          font-size: 18px;
+          width: 80%;
+          height: 50px;
+          border-radius: 25px;
+          background: #3bdd41;
+          border: none;
+          text-decoration: none;
+          outline: none;
+          transition: 0.3s;
+          &:hover {
+            -webkit-box-shadow: 3px 6px 35px -5px rgba(78, 240, 70, 1);
+            -moz-box-shadow: 3px 6px 35px -5px rgba(78, 240, 70, 1);
+            box-shadow: 3px 6px 35px -5px rgba(78, 240, 70, 1);
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .j-bg-degrade .j-container-form .painel-logo {
+    display: none;
+  }
+
+  .j-bg-degrade .j-container-form {
+    width: 90vw;
+    .painel-form {
+      width: 100%;
+    }
+  }
+}

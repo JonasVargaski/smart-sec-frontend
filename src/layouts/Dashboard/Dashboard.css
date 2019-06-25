@@ -1,0 +1,29 @@
+
+#main-panel{
+   display: grid;
+   min-height: 100vh;
+   max-height: 100vh;
+   overflow: hidden;
+   grid-template-columns: 1fr;
+   grid-template-rows: 60px 1fr 62px;
+   grid-template-areas:'header' 'conteudo' 'footer';
+}
+
+div.main-panel > nav.navbar {
+    grid-area: header;
+}
+
+div.main-panel > div.content{
+    grid-area: conteudo;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div.main-panel > footer.footer{
+    grid-area: footer;
+}
+
+body {
+   overscroll-behavior: contain!important;
+}

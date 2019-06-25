@@ -1,0 +1,37 @@
+.form-control::-moz-placeholder {
+  @include placeholder($medium-gray, 1);
+}
+.form-control:-moz-placeholder {
+  @include placeholder($medium-gray, 1);
+}
+.form-control::-webkit-input-placeholder {
+  @include placeholder($medium-gray, 1);
+}
+.form-control:-ms-input-placeholder {
+  @include placeholder($medium-gray, 1);
+}
+
+.form-control {
+  background-color: $white-bg;
+  border: 1px solid $light-gray;
+  border-radius: $border-radius-base;
+  color: #414141;
+  @include input-size($padding-base-vertical, $padding-base-horizontal - 4, $height-base);
+  @include box-shadow(none);
+
+  &:focus {
+    background-color: $white-bg;
+    border: 1px solid $medium-dark-gray;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3), 0 1px 7px rgba(0, 0, 0, 0.22);
+    outline: 0 !important;
+    color: #333333;
+  }
+}
+
+.card form [class*="col-"] {
+  &:first-child {
+    @media (min-width: 992px) {
+      padding-left: 0px !important;
+    }
+  }
+}

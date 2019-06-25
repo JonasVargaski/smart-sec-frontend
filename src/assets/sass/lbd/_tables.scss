@@ -1,0 +1,16 @@
+.table {
+  > tbody > tr > td {
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  > thead > tr > th {
+    border-bottom: 1px;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-weight: $font-weight-normal;
+  }
+}

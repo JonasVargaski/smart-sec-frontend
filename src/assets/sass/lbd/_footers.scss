@@ -1,0 +1,18 @@
+.footer {
+  background-color: $white-color;
+  line-height: $line-height;
+
+  .copyright {
+    color: $default-states-color;
+    padding: 10px 15px;
+    margin: 10px 3px;
+    line-height: 18px;
+    font-size: $font-size-base;
+    span {
+      text-decoration: none;
+      cursor: default;
+      font-size: 15px;
+      color: #68cff5;
+    }
+  }
+}

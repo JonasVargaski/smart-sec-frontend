@@ -1,0 +1,38 @@
+div.modal {
+  div.modal-dialog {
+    div.modal-content {
+      min-height: 250px;
+      border-radius: 7px;
+      border: 2px solid #337ab7;
+      div.modal-header {
+        user-select: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 10px;
+        background: #337ab7;
+        .modal-title.h4 {
+          font-weight: 400;
+          margin: 0px;
+          color: #fff;
+        }
+        button {
+          outline: none;
+          margin: 0px;
+          span {
+            font-size: 28px;
+            color: #fff;
+            opacity: 1;
+          }
+        }
+
+        button.close {
+          padding: 7px;
+        }
+      }
+      .modal-footer {
+        padding: 7px 15px;
+      }
+    }
+  }
+}
